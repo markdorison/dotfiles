@@ -96,14 +96,17 @@ chflags nohidden ~/Library
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
 
-# Set the icon size of Dock items to 29 pixels
+# Set the icon size of Dock items to 29 pixels.
 defaults write com.apple.dock tilesize -int 29
 
-# Show indicator lights for open applications in the Dock
+# Show indicator lights for open applications in the Dock.
 defaults write com.apple.dock show-process-indicators -bool true
 
-# Make Dock icons of hidden applications translucent
+# Make Dock icons of hidden applications translucent.
 defaults write com.apple.dock showhidden -bool true
+
+# Pin Dock to left side of screen.
+defaults write com.apple.dock pinning -string start
 
 ###############################################################################
 # Safari & WebKit                                                             #
